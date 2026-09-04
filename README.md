@@ -29,10 +29,12 @@ On the server that serves `mcp.binnaclellc.com`:
 php artisan admin Podcasts createVoiceDeviceToken
 ```
 
+That creates `mcp_users` row `voice@binnaclellc.com` (`mcp_service=voice`) and prints a **5–9 digit PIN** (`api_token`). Not the Grok Bot connector token.
+
 In the app: **Settings**
 
 - Server URL: `https://mcp.binnaclellc.com`
-- Device token: paste the token (trim newlines)
+- Device token: paste the PIN
 
 There is **no xAI API key** on the phone.
 
